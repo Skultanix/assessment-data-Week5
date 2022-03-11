@@ -24,7 +24,7 @@ module.exports = {
             );
 
             CREATE TABLE cities (
-                city_id PRIMARY SERIAL KEY,
+                city_id SERIAL PRIMARY KEY,
                 name VARCHAR,
                 rating INTEGER,
                 country_id INTEGER
