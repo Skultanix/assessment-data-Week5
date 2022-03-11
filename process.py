@@ -13,5 +13,16 @@ def sales_reports(log_file):
         if day == "Mon":
             #print the line
             print(line)
-    
+            
+# Extra credit - Python
+def bulk_orders(log_file):
+    for line in log_file:
+        line = line.strip('\n')
+        orders = int(line[16:18])
+        if orders >= 10:
+            print(line)
+
+
 sales_reports(log_file)
+#Extra credit: uncomment the function call below and comment the call above to see answers.
+#bulk_orders(log_file)
